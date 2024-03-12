@@ -1,0 +1,8 @@
+import 'package:flutter/material.dart';
+import 'package:tiny_recognizer/screens/home/home_screen.dart';
+import 'package:tiny_recognizer/screens/init_screen.dart';
+
+final Map<String, WidgetBuilder> routes = {
+  InitScreen.routeName: (context) => const InitScreen(),
+  HomeScreen.routeName: (context) => const HomeScreen()
+};
