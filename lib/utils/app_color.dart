@@ -20,9 +20,9 @@ class AppColor{
     black = Color.fromRGBO((color.red*.4).round(), (color.green*.4).round(), (color.blue*.4).round(), 1.0);
     white = Color.fromRGBO((color.red + (255 - color.red) * .7).round(), (color.green + (255 - color.green) * .7).round(), (color.blue + (255 - color.blue) * .7).round(), 1.0);
     gradient = LinearGradient(
-    colors: [primary,secondary], 
-    begin: Alignment.centerLeft,
-    end: Alignment.centerRight
+    colors: [light,primary,black], 
+    begin: Alignment.topCenter,
+    end: Alignment.bottomCenter
     );
     navGradient = LinearGradient(
     colors: [primary,secondary], 

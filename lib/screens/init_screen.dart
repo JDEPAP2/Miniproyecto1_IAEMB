@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:tiny_recognizer/screens/home/home_screen.dart';
+import 'package:tiny_recognizer/screens/tutorials/tutorial_screen.dart';
 // import 'package:shop_app/providers/providers.dart';
 // import 'package:shop_app/components/init_app_bar.dart';
 // import 'package:shop_app/utils/app_color.dart';
@@ -28,7 +29,7 @@ class InitScreenState extends ConsumerState<InitScreen> {
 
   final pages = <Widget>[
     HomeScreen(),
-    HomeScreen()
+    TutorialScreen()
   ];
 
   @override
@@ -51,14 +52,14 @@ class InitScreenState extends ConsumerState<InitScreen> {
               type: BottomNavigationBarType.fixed,
               items: [
                 BottomNavigationBarItem(
-                  icon: Icon(Icons.receipt_outlined, color: Colors.black, size: 25),
-                  activeIcon: Icon(Icons.receipt, color: Colors.white, size: 30),
+                  icon: Icon(Icons.bluetooth_searching_outlined, color: Colors.grey, size: 25),
+                  activeIcon: Icon(Icons.bluetooth_searching, color: Colors.black, size: 30),
                   label: "Home",
                 ),
                 BottomNavigationBarItem(
-                  icon: Icon(Icons.dashboard_outlined, color: Colors.black, size: 25),
-                  activeIcon: Icon(Icons.dashboard_rounded, color: Colors.white, size: 30),
-                  label: "Groups",
+                  icon: Icon(Icons.info_outline, color: Colors.grey, size: 25),
+                  activeIcon: Icon(Icons.info_rounded, color: Colors.black, size: 30),
+                  label: "Tutoriales",
                 ),
                 // BottomNavigationBarItem(
                 //   icon: Icon(Icons.groups_outlined, color: appColor.primary, size: 25),

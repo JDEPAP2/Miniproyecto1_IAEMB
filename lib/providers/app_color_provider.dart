@@ -5,7 +5,7 @@ import 'package:tiny_recognizer/utils/app_color.dart';
 final appColorProvider = StateNotifierProvider<AppColorController, AppColor>((ref) => AppColorController());
 
 class AppColorController extends StateNotifier<AppColor>{
-  AppColorController(): super(AppColor(Colors.red));
+  AppColorController(): super(AppColor(Colors.white));
 
   void setColor(Color color){
     state = AppColor(color);
