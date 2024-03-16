@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Ptt Counts',
+      title: 'Recoseñas',
       theme: AppTheme.lightTheme(context),
       initialRoute: InitScreen.routeName,
       routes: routes,
